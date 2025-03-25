@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+    --color-slightlyCyan: #5FB4A2;
+    --color-darkBlue: #203A4C;
+    --color-grayishBlue: #33323D;
+    --color-veryLightGrey: #FAFAFA; /* Background */
+    --color-lightGrey: #EAEAEB; /* Inputs */
+    --color-errorRed: #F43030; /* Error */
+
+    --font-IbarraRealNova: 'Ibarra Real Nova', serif;
+    --font-PublicSans: 'Public Sans', sans-serif;
+}
