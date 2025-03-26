@@ -1,109 +1,181 @@
 <!doctype html>
 <html lang="en" xmlns:x-transition="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-373367435"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {dataLayer.push(arguments);}
-            gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-373367435"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-            gtag('config', 'AW-373367435');
-        </script>
-        <!-- Google Tag Manager -->
-        <script>(function (w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({
-                    'gtm.start':
-                        new Date().getTime(),
-                    event: 'gtm.js'
-                });
-            let f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l !== 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-                j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-                f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-KX4J55ZD');</script>
-        <!-- End Google Tag Manager -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-              rel="stylesheet">
-        <link href="./dist/style.css" rel="stylesheet">
-        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-        <title>Langhe Web Design</title>
-    </head>
-    <body class="min-h-screen flex flex-col">
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX4J55ZD"
-                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-        <!--Header-->
-        <header x-data="{open: false}">
-            <!--    Navbar-->
-            <nav class="bg-white p-8">
-                <div class="container mx-auto flex items-center justify-between">
-                    <!--    Logo-->
-                    <div>
-                        <a href="index.html">
-                            <img src="./dist/assets/images/logoLBL256x256.webp" alt="logo" class="w-10 h-10 rounded-full">
-                        </a>
-                    </div>
-                    <!--    Hamburger Menu Button-->
-                    <button @click="open = !open" class="md:hidden text-darkBlue focus:outline-none p-3">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                             viewBox="0 0 24 24" class="w-8 h-8">
-                            <path d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
-                    </button>
-                    <!--    Navbar links-->
-                    <div class="hidden md:flex space-x-4 font-PublicSans">
-                        <a href="#">Acasa</a>
-                        <a href="#">Galeria Proiectelor</a>
-                        <a href="#">Scrie-i lui Bogdan</a>
-                    </div>
-                </div>
-            </nav>
-            <!--    Mobile Menu Hamburger Menu-->
-            <div x-show="open"
-                 x-transition:enter="transition ease-out duration-300"
-                 x-transition:enter-start="opacity-0 transform translate-x-full"
-                 x-transition:enter-end="opacity-100 transform translate-x-0"
-                 x-transition:leave="transition ease-in duration-300"
-                 x-transition:leave-start="opacity-100 transform translate-x-0"
-                 x-transition:leave-end="opacity-0 transform translate-x-full"
-                 x-cloak
-                 @click.away="open = false"
-                 class="md:hidden fixed inset-0 bg-grayishBlue bg-opacity-75 z-50">
-                <div class="flex justify-end p-4">
-                    <!--    Close Button-->
-                    <button @click="open = false" class="text-white hover:opacity-80 transition-opacity duration-200 p-3">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                             viewBox="0 0 24 24" class="w-8 h-8">
-                            <path d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
-                </div>
-                <!--Mobile Menu Links-->
-                <div class="flex flex-col items-center space-y-4 font-PublicSans">
-                    <a href="#" class="text-white text-xl hover:opacity-80 transition-opacity duration-200">Acasa</a>
-                    <a href="#" class="text-white text-xl hover:opacity-80 transition-opacity duration-200">Galeria Proiectelor</a>
-                    <a href="#" class="text-white text-xl hover:opacity-80 transition-opacity duration-200">Scrie-i lui Bogdan</a>
-                </div>
-            </div>
-        </header>
-        <!--End of Header Section-->
-        <main class="flex-grow p-8">
-            <!--Hero Section-->
-            <section class="hero">
-                <img src="./dist/assets/images/homepage/general/bone.webp" alt="Un os curățat până la fibră, așezat pe o farfurie ceramică minimalistă. Imaginea explorează vizual metafora foamei, a lipsei și a fragilității umane. Contrastul puternic dintre textura osului și fundalul sobru evocă tăcerea unei mese goale — un simbol al supraviețuirii, al așteptării și al memoriei istorice">
-            </section>
-        </main>
-        <footer class="bg-veryLightGrey">
-        </footer>
-    </body>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+
+      gtag("config", "AW-373367435");
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        let f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l !== "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-KX4J55ZD");
+    </script>
+    <!-- End Google Tag Manager -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./dist/style.css" rel="stylesheet" />
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <title>Langhe Web Design</title>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-KX4J55ZD"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!--Header-->
+    <header x-data="{open: false}" class="relative">
+      <!--    Navbar-->
+      <nav class="bg-white p-8 fixed top-0 right-0 left-0">
+        <div class="container mx-auto flex items-center justify-between">
+          <!--    Logo-->
+          <div>
+            <a href="index.html">
+              <img
+                src="./dist/assets/images/logoLBL256x256.webp"
+                alt="logo"
+                class="w-10 h-10 rounded-full"
+              />
+            </a>
+          </div>
+          <!--    Hamburger Menu Button-->
+          <button
+            @click="open = !open"
+            class="md:hidden text-darkBlue focus:outline-none p-3"
+          >
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              class="w-8 h-8"
+            >
+              <path d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+          <!--    Navbar links-->
+          <div class="hidden md:flex space-x-4 font-PublicSans">
+            <a href="#">Acasa</a>
+            <a href="#">Galeria Proiectelor</a>
+            <a href="#">Scrie-i lui Bogdan</a>
+          </div>
+        </div>
+      </nav>
+      <!--    Mobile Menu Hamburger Menu-->
+      <div
+        x-show="open"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 transform translate-x-full"
+        x-transition:enter-end="opacity-100 transform translate-x-0"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100 transform translate-x-0"
+        x-transition:leave-end="opacity-0 transform translate-x-full"
+        x-cloak
+        @click.away="open = false"
+        class="md:hidden fixed inset-0 bg-grayishBlue bg-opacity-75 z-50"
+      >
+        <div class="flex justify-end p-4">
+          <!--    Close Button-->
+          <button
+            @click="open = false"
+            class="text-white hover:opacity-80 transition-opacity duration-200 p-3"
+          >
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              class="w-8 h-8"
+            >
+              <path d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <!--Mobile Menu Links-->
+        <div class="flex flex-col items-center space-y-4 font-PublicSans">
+          <a
+            href="#"
+            class="text-white text-xl hover:opacity-80 transition-opacity duration-200"
+            >Acasa</a
+          >
+          <a
+            href="#"
+            class="text-white text-xl hover:opacity-80 transition-opacity duration-200"
+            >Galeria Proiectelor</a
+          >
+          <a
+            href="#"
+            class="text-white text-xl hover:opacity-80 transition-opacity duration-200"
+            >Scrie-i lui Bogdan</a
+          >
+        </div>
+      </div>
+    </header>
+    <!--End of Header Section-->
+    <main class="flex-grow px-8">
+      <!--Hero Section-->
+      <section class="hero">
+        <h1
+          class="mb-8 text-center font-bold text-grayishBlue font-IbarraRealNova text-4xl"
+        >
+          Langhe Web Design
+        </h1>
+        <p class="mb-8 font-bold text-grayishBlue font-IbarraRealNova text-4xl">
+          Dacă te-ai săturat să ți se ceară și pielea de pe os pentru un site web, ai ajuns exact unde trebuie.
+        </p>
+        <img
+          class="mx-auto mb-8 size-full"
+          src="./dist/assets/images/homepage/general/bone.webp"
+          alt="Un os curățat până la fibră, așezat pe o farfurie ceramică minimalistă. Imaginea explorează vizual metafora foamei, a lipsei și a fragilității umane. Contrastul puternic dintre textura osului și fundalul sobru evocă tăcerea unei mese goale — un simbol al supraviețuirii, al așteptării și al memoriei istorice"
+        />
+        <p class="mb-8 font-bold text-grayishBlue font-IbarraRealNova text-4xl">
+          Salut, sunt Bogdan și îmi place să construiesc site-uri web, <span>gratis</span>.
+        </p>
+        <button type="button">Despre mine</button>
+      </section>
+    </main>
+    <footer class="bg-veryLightGrey"></footer>
+  </body>
 </html>
