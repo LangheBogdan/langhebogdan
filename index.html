@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:x-transition="http://www.w3.org/1999/xhtml">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,9 +21,9 @@
                         new Date().getTime(),
                     event: 'gtm.js'
                 });
-                var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-                j.async = true;
+            let f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l !== 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
                 j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
                 f.parentNode.insertBefore(j, f);
@@ -43,9 +43,9 @@
                           height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         <!--Header-->
-        <header x-data="{open: false}">
+        <header x-data="{open: false}" class="mb-8">
             <!--    Navbar-->
-            <nav class="bg-veryLightGrey p-4">
+            <nav class="bg-white p-8">
                 <div class="container mx-auto flex items-center justify-between">
                     <!--    Logo-->
                     <div>
@@ -98,6 +98,10 @@
         </header>
         <!--End of Header Section-->
         <main class="flex-grow">
+            <!--Hero Section-->
+            <section class="hero">
+                <img src="./dist/assets/images/homepage/general/bone.webp" alt="Un os curățat până la fibră, așezat pe o farfurie ceramică minimalistă. Imaginea explorează vizual metafora foamei, a lipsei și a fragilității umane. Contrastul puternic dintre textura osului și fundalul sobru evocă tăcerea unei mese goale — un simbol al supraviețuirii, al așteptării și al memoriei istorice">
+            </section>
         </main>
         <footer class="bg-veryLightGrey">
         </footer>
