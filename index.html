@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en" xmlns:x-transition="http://www.w3.org/1999/xhtml">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -37,13 +37,13 @@
       })(window, document, "script", "dataLayer", "GTM-KX4J55ZD");
     </script>
     <!-- End Google Tag Manager -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link href="./dist/style.css" rel="stylesheet"/>
+    <link href="./dist/style.css" rel="stylesheet" />
     <script
       defer
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
@@ -138,17 +138,17 @@
           <a
             href="https://langhe.site"
             class="text-white text-xl hover:opacity-80 transition-opacity duration-200"
-          >Acasa</a
+            >Acasa</a
           >
           <a
             href="#"
             class="text-white text-xl hover:opacity-80 transition-opacity duration-200"
-          >Galeria Proiectelor</a
+            >Galeria Proiectelor</a
           >
           <a
             href="#"
             class="text-white text-xl hover:opacity-80 transition-opacity duration-200"
-          >Scrie-i lui Bogdan</a
+            >Scrie-i lui Bogdan</a
           >
         </div>
       </div>
@@ -156,24 +156,50 @@
     <!--End of Header Section-->
     <main class="flex-grow px-8">
       <!--Hero Section-->
-      <section class="hero">
+      <section class="hero-section mb-24">
         <h1
           class="mb-8 text-center font-bold text-grayishBlue font-IbarraRealNova text-4xl"
         >
           Langhe Web Design
         </h1>
-        <p class="mb-8 font-bold text-grayishBlue font-IbarraRealNova text-4xl">
-          Dacă te-ai săturat să ți se ceară și pielea de pe os pentru un site web (banal, precum acesta), ai ajuns exact unde trebuie.
+        <p class="mb-8 font-bold text-grayishBlue font-PublicSans text-4xl">
+          Dacă te-ai săturat să ți se ceară și pielea de pe os pentru un site
+          web (banal, precum acesta), ai ajuns exact unde trebuie.
         </p>
         <img
           class="mx-auto mb-8"
           src="./dist/assets/images/homepage/mobile/image-homepage-bone.webp"
           alt="Un os curățat până la fibră, așezat pe o farfurie ceramică minimalistă. Imaginea explorează vizual metafora foamei, a lipsei și a fragilității umane. Contrastul puternic dintre textura osului și fundalul sobru evocă tăcerea unei mese goale — un simbol al supraviețuirii, al așteptării și al memoriei istorice"
         />
-        <p class="mb-8 font-bold text-grayishBlue font-IbarraRealNova text-4xl">
-          Salut, sunt Bogdan și îmi place să construiesc site-uri web, <span>gratis</span>.
+        <p class="mb-8 font-bold text-grayishBlue font-PublicSans text-4xl">
+          Salut, sunt Bogdan și îmi place să construiesc site-uri web,
+          <span>gratis</span>.
         </p>
-        <button type="button">Despre mine</button>
+        <a href="#about" type="button">Despre mine</a>
+      </section>
+      <!--      End Hero-Section-->
+      <!--      About Section-->
+      <section id="about" class="about-section border-b-1 border-grayishBlue pb-8">
+        <img
+          class="mb-8"
+          src="./dist/assets/images/homepage/mobile/image-homepage-profile-me.webp"
+          alt="Image of Bogdan"
+        />
+        <h1
+          class="mb-8 border-t-1 pt-8 border-grayishBlue text-left font-bold text-grayishBlue font-IbarraRealNova text-4xl"
+        >
+          Despre mine
+        </h1>
+        <p class="mb-4 text-grayishBlue font-PublicSans">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget felis
+          quis felis porttitor commodo in quis justo. Praesent et dapibus diam,
+          a dictum ligula. Nullam egestas semper erat, eu tempus augue egestas
+          ut. Aliquam id elit faucibus, blandit ante sed, dignissim lacus.
+          Aliquam varius lectus quis tortor ultricies, ut tincidunt nisl
+          condimentum. Praesent et ante rutrum, consectetur mauris a, malesuada
+          magna. In ac vulputate mauris. Integer at euismod risus.
+        </p>
+        <a class="" href="#">Mergi la galeria proiecteleor</a>
       </section>
     </main>
     <footer class="bg-veryLightGrey"></footer>
